@@ -1,5 +1,5 @@
-function blocksAway = day1
-    input = load('day1_1_input.mat');
+function [blocksAway, pathWalked] = day1_1
+    input = load('day1_input.mat');
     path = input.ans;
 
     pathWalked = [0, 0];
