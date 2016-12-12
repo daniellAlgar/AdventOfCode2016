@@ -8,8 +8,7 @@ function [errorCorr, origMsg] = day6
         errorCorr = [errorCorr, mode(column)];
         
         [uniqueA, ~, J] = unique(column);
-        occ = histc(J, 1 : numel(uniqueA));
-        [~, l] = min(occ);
+        [~, l] = min(histc(J, 1 : numel(uniqueA)));
         origMsg = [origMsg, uniqueA(l)];
     end
 end
