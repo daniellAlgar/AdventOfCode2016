@@ -1,4 +1,4 @@
-function nrOfLitPixels = day8_1
+function [nrOfLitPixels, screen] = day8_1
     input = readInput('day8_input.txt');
     screen = false(6, 50);
 
