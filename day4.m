@@ -3,14 +3,13 @@ function sectorIdSum = day4
     val = cell(0, 3);
 
     for i = 1 : length(input)
-        [uniq, ~, J] = unique(input{i, 1}) ;
+        [uniq, ~, J] = unique(input{i, 1});
         occ = histc(J, 1 : numel(uniq));
         [~, ind] = sort(occ, 'descend');
         
         if strcmp(uniq(ind(1 : 5)), input{i, 3})
             val{end + 1, 1} = input{i, 1};
             val{end, 2} = input{i, 2};
-            val{end, 3} = input{i, 3};
         end
     end
     
